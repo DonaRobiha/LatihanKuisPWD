@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    .card{
+      background-color: rgb(218, 186, 58);
+    }
+    .card-title {
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .season{
+      letter-spacing: -2px;
+    }
+    /* Memberi warna berbeda untuk setiap huruf pada kata 'season' */
+    .season span {
+      display: inline;
+      color: red;
+    }
+    .season span:nth-child(2) { color: orange; }
+    .season span:nth-child(3) { color: yellow; }
+    .season span:nth-child(4) { color: green; }
+    .season span:nth-child(5) { color: blue; }
+    .season span:nth-child(6) { color: indigo; }
+    .season span:nth-child(7) { color: rgb(171, 163, 20);
+     }
+    table {
+      border-spacing: 5px;
+    }
+    .input-group-text {
+      padding: 5px;
+    }
+    td {
+        padding: 5px; /* Memberikan jarak antar kolom */
+      }
+      button {
+        color: rgb(22, 22, 22); /* Menjadikan teks tombol putih */
+        background-color: #f4f8fb; /* Menentukan warna latar belakang tombol */
+        border: none; /* Menghilangkan border tombol */
+      }
+
+      /* Efek hover pada tombol */
+      button:hover {
+        background-color: #b86ac6; /* Mengubah warna latar belakang tombol saat hover */
+      }
+  </style>
+  </head>
+  
+  <body class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
+    <div class="card position-absolute top-50 start-50 translate-middle" style="width: 600px; height: 300px;">
+      <div class="card-body position-absolute top-50 start-50 translate-middle">
+        <h5 class="card-title"><center>What's the 
+          <span class="season">
+            <span>S</span>
+            <span>e</span>
+            <span>a</span>
+            <span>s</span>
+            <span>o</span>
+            <span>n</span>
+          </span>  at the time?</center></h5>
+        <form action="seasonn.php" METHOD="post">
+        <p class="card-text">
+          <table class = "input-grup" style "width : 440px">
+            <tr>
+                <td> <div class="input-group-text"> <input type="radio" name="bulan" value="January">January</div></td>
+                <td> <div class="input-group-text"> <input type="radio" name="bulan" value="February">February</div></td>
+                <td> <div class="input-group-text"> <input type="radio" name="bulan" value="March">March</div></td>
+                <td> <div class="input-group-text"> <input type="radio" name="bulan" value="April">April</div></td>
+            </tr>
+            <tr>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="May">May</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="June">June</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="July">July</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="August">August</div></td>
+            </tr>
+            <tr>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="September">September</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="October">October</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="November">November</div></td>
+              <td> <div class="input-group-text"> <input type="radio" name="bulan" value="December">December</div></td>
+            </tr>
+        </table>
+
+        <button type ="submit" style = " width : 445px;"> See season</button>
+
+
+        <!-- <style>
+          .hover-dark:hover {
+            background-color: aquamarine;
+            color :aqua
+          }
+        </style> -->
+          
+        
+        </form>
+        </div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
